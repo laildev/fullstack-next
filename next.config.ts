@@ -9,10 +9,10 @@ const nextConfig: NextConfig = {
         hostname: 'fakestoreapi.com',
         pathname: '/img/**',
       },
-      // {
-      //   protocol: "https",
-      //   hostname: "res.cloudinary.com/**"
-      // }
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com/**"
+      }
     ],
   },
 };
