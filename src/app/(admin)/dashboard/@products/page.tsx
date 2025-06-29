@@ -6,7 +6,7 @@ import { useState } from "react"
 export default function AdminProductPage() {
   const [status, setStatus] = useState("");
   const revalidate = async () => {
-    const result = await fetch("http://localhost:3000/api/revalidate?tag=products&secret=password123", {
+  const result = await fetch(`${process.env.NEXT_PUBLIC_API}/api/revalidate?tag=products&secret=password123`, {
       method: "POST"
     })
 
