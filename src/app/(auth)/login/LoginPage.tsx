@@ -12,7 +12,6 @@ const LoginPage = () => {
   const [error, seterror] = useState("");
 
   useEffect(() => {
-    // ✅ Hindari error saat build
     if (typeof window !== 'undefined') {
       const params = new URLSearchParams(window.location.search);
       const url = params.get('callbackUrl') ?? '/';
